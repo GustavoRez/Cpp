@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main(){
+	
+	int y;
+	float z, x;
+	
+	printf("Insert a weigth!\n");
+	scanf("%f", &x);
+	
+	printf("Pick a planet!!\n1.Mercury\n2.Venus\n3.Mars\n4.Jupiter\n5.Saturn\n6.Uranus\n7.Neptune\n");
+	scanf ("%d", &y);
+	
+	switch(y){
+		case 1:	
+			z = x * 0.38;		
+			printf("Your weigth in Mercury is: %.2f", z);
+			break; 
+
+		case 2:
+			z = x * 0.91;
+			printf("Your weigth in Venus is: %.2f", z);
+			break; 
+		
+		case 3:			
+			z = x * 0.38;	
+			printf("Your weigth in Mars is: %.2f", z);
+			break; 
+		
+		case 4:			
+			z = x * 2.34;	
+			printf("Your weigth in Jupiter is: %.2f", z);
+			break; 
+			
+		case 5:			
+			z = x * 1.06;	
+			printf("Your weigth in Saturn is: %.2f", z);
+			break; 
+		
+		case 6:				
+			z = x * 0.92;	
+			printf("Your weigth in Uranus is: %.2f", z);
+			break;
+		
+		case 7:			
+			z = x * 1.19;		
+			printf("Your weigth in Neptune is: %.2f", z);
+			break;
+		
+		default:		
+		    printf("Planet not found!");
+		    break;			
+	}
+}
